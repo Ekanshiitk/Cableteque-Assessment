@@ -19,9 +19,9 @@ The script reads the Excel file, combines designators, applies modifications, an
 
 ### Usage 
  To generate the configurations, run the on terminal 
-	    +------------------------------------------------------------+
-	    | python bicycle_generator.py /absolute/path/to/Bicycle.xlsx |
-	    +------------------------------------------------------------+
+
+	python bicycle_generator.py /absolute/path/to/Bicycle.xlsx
+	   
 
 ## Automated test 
 The automated test is used for verifying the functionality of the Bicycle Generator (bicycle_generator.py). It ensures that the script correctly processes Excel files, generates all possible bicycle configurations, and outputs the expected JSON format.
@@ -34,23 +34,23 @@ The automated test is used for verifying the functionality of the Bicycle Genera
 
 ### Downlaoding dependencies 
  To generate excel files for testing, download
-    +------------------------+
-    | pip install xlsxwriter |
-    +------------------------+
+ 
+	pip install xlsxwriter 
+    
 
 ### Running the tests
 To execute the tests, run 
-    +-----------------------------------------------+
-    | python -m unittest test_bicycle_generator.py  |
-    +-----------------------------------------------+
+    
+     python -m unittest test_bicycle_generator.py 
+    
 
 If all the tests pass, we shall se an output
 
-   +----------------------------------------------+
-   |----------------------------------------------|
-   | Ran 1 test in 0.345s                         |
-   |                                              |
-   | OK                                           |
-   +----------------------------------------------+
+	   +----------------------------------------------+
+	   |----------------------------------------------|
+	   | Ran 1 test in 0.345s                         |
+	   |                                              |
+	   | OK                                           |
+	   +----------------------------------------------+
 
-     If there are errors, unittest will display a detailed report.
+If there are errors, unittest will display a detailed report.
